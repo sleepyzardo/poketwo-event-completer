@@ -1,3 +1,6 @@
+import random, re, string
+import requests as r
+
 class Utils:
     @staticmethod
     def click_button(token, message_id, custom_id, channel_id, guild_id, application_id, session_id, type, values=None):

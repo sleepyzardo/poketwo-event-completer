@@ -2,7 +2,6 @@ import discord, random, re, string, asyncio
 from utility import Util
 import requests as r
 import coloredlogs
-import threading
 import json
 import logging
 TOKEN = 'ur account token'

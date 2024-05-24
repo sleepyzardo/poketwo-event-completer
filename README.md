@@ -40,12 +40,15 @@ This code might have bugs or unattended issues. They are primarily because I've 
 2. Buggy in claiming orders.
 3. Buggy in Offering more than 15 amounts of butter.
 
+## Snippets 
+![image](https://github.com/sleepyzardo/poketwo-event-completer/assets/88527682/ae38d8ea-9bd8-4087-bae0-3dde371be37b)
+
    
 # Future-Plans
 No such future Plans as of now. Suggestions are welcomed though.
 
 
-Copyright Zardo
+# Copyright Zardo
 
 This code is provided under the following conditions:
 1. You may use this code for personal and non-commercial purposes.

@@ -63,7 +63,7 @@ class Utils:
         return "".join(random.choice(string.ascii_letters + string.digits) for _ in range(32))
     @staticmethod
     def extract_dish_name(text):
-        dish_name_pattern = r"order\s[🍡🍰🍲🍮🍪🍨🍝🍙]+\s\*\*([\w\s]+)\*\*\sfor"
+        dish_name_pattern = r"\*\*(.*?)\*\*"
         
         dish_name_match = re.search(dish_name_pattern, text)
         

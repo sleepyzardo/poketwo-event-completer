@@ -48,7 +48,7 @@ This code might have bugs or unattended issues. They are primarily because I've 
 - Edited Regular Expression to correctly log name of the dish.
 
 # Future-Plans
-No such future Plans as of now. Suggestions are welcomed though.
+- Add Multi-Token support.
 
 
 

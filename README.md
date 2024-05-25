@@ -41,7 +41,8 @@ This code might have bugs or unattended issues. They are primarily because I've 
 3. Buggy in Offering more than 15 amounts of butter.
 
 ## Snippets 
-![image](https://github.com/sleepyzardo/poketwo-event-completer/assets/88527682/ae38d8ea-9bd8-4087-bae0-3dde371be37b)
+![image](https://github.com/sleepyzardo/poketwo-event-completer/assets/88527682/2ce5827b-f4d6-4a35-ad27-b531e04eea62)
+
 
 ## ChangeLogs
 - Edited Regular Expression to correctly log name of the dish.

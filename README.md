@@ -1,4 +1,4 @@
-# Zardo's Event Completer (OUTDATED UPDATING SOON..)
+# Zardo's Event Completer 
 
 This is a python script to automate the process of completing Poketwo's New event quests! The code might be a bit shabby and buggy due to me speedcoding it! Open an issue and I'll see what I can do
 
@@ -8,6 +8,7 @@ This is a python script to automate the process of completing Poketwo's New even
 - Crafts recipes and completes orders
 - Excellent Error Handling
 - Sexy Logger
+- Multi-Token Support
 ## How it works?
 1. It sends `@poketwo event inv` to check its inventory for available ingredients.
 2. It calculates what to donate. Since butter is the rarest. We priortise it being used in donations rather than orders.
@@ -24,8 +25,8 @@ Please follow the following steps to run this app yourself!
 2. **Install Libraries:** Download the following listed libraries using ```pip install <library_name>:```
    - discord.py-self
 3. **Configuration:**
-   - Account Authorization Token on line `7` in `main.py`.
-   - ChannelId on line `8` in `main.py`.
+   - Account Authorization Token in `TOKENS` dict in `main.py`.
+   - ChannelId in `TOKENS` dict in `main.py`.
 4. **Make sure you dont have any active orders on the bot account, If you do please complete them first!**
 4. **Run** the file using `python main.py`.
 
@@ -38,7 +39,7 @@ This code might have bugs or unattended issues. They are primarily because I've 
 ## Known issues
 1. ~~Failure in Regular Expression while obtaining the dish name.~~
 2. Buggy in claiming orders.
-3. Buggy in Offering more than 15 amounts of butter.
+3. ~~Buggy in Offering more than 15 amounts of butter.~~
 
 ## Snippets 
 ![image](https://github.com/sleepyzardo/poketwo-event-completer/assets/88527682/2ce5827b-f4d6-4a35-ad27-b531e04eea62)
@@ -46,9 +47,12 @@ This code might have bugs or unattended issues. They are primarily because I've 
 
 ## ChangeLogs
 - Edited Regular Expression to correctly log name of the dish.
+- Updated the code to work with new drop-rates.
+- Added More options to logger
+- Added Multi-Token support.
 
 # Future-Plans
-- Add Multi-Token support.
+- ~~Add Multi-Token support.~~ Added.
 
 
 

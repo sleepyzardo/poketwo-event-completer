@@ -26,32 +26,49 @@ class Utils:
 
     @staticmethod
     def send(content, token, channel_id):
-        url = f'https://discord.com/api/v9/channels/{channel_id}/messages' 
+        url = f'https://discord.com/api/v9/channels/{channel_id}/messages'
         headers = {'Authorization': token}
         payload = {'content': content}
         r.post(url, headers=headers, json=payload)
-    @staticmethod
-    def check(ingredient_dict):
-        butter_quantity = ingredient_dict.get("Butter", 0)
 
-        for ingredient, quantity in ingredient_dict.items():
-            if ingredient == "Butter":
-                continue
-            if int(quantity) <= int(butter_quantity):
-                return False, butter_quantity
-
-        return True, butter_quantity
     @staticmethod
-    def checkb(order):
-        if 'butter' in order.description.lower():
-            return 999,999,999
-        else:
-            ingredients = ' '.join(item.split()[1] for item in order.description.split(', '))
-            value = order.value
-            return 0, ingredients, value
+    def check_min_quantity(ingredient_dict):
+        min_quantity = float('inf')  # Initialize with infinity to find the minimum quantity
+
+        # Find the minimum quantity among all ingredients
+        for quantity in ingredient_dict.values():
+            if int(quantity) < min_quantity:
+                min_quantity = int(quantity)
+
+        return min_quantity
+
+    @staticmethod
+    def checkb(orders, available_ingredients):
+        for order in orders:
+            order_ingredients = order.description.lower().split(', ')
+            all_ingredients_available = True
+            temp_ingredients = available_ingredients.copy()  # Create a temporary copy to deduct from
+
+            for ingredient_info in order_ingredients:
+                quantity, ingredient = ingredient_info.split('x ')
+                ingredient = ingredient.strip().title()
+                quantity = int(quantity.strip())
+                
+                if ingredient in temp_ingredients and quantity <= int(temp_ingredients[ingredient]):
+                    temp_ingredients[ingredient] = int(temp_ingredients[ingredient]) - quantity
+                else:
+                    all_ingredients_available = False
+                    break
+
+            if all_ingredients_available:
+                return 0, ' '.join(item.split()[1] for item in order.description.split(', ')), order.value, temp_ingredients
+
+        return 999, 999, 999, available_ingredients
+
     @staticmethod
     def generate_session_id():
         return "".join(random.choice(string.ascii_letters + string.digits) for _ in range(32))
+
     @staticmethod
     def extract_dish_name(text):
         dish_name_pattern = r"\*\*(.*?)\*\*"

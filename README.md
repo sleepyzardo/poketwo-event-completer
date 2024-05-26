@@ -10,13 +10,7 @@ This is a python script to automate the process of completing Poketwo's New even
 - Excellent Error Handling
 - Sexy Logger
 - Multi-Token Support
-## How it works?
-1. It sends `@poketwo event inv` to check its inventory for available ingredients.
-2. It calculates what to donate. Since butter is the rarest. We priortise it being used in donations rather than orders.
-3. It finally donates everything and is done with phase-1 of the app.
-4. It proceeds to run `@poketwo ev` to check for available orders.
-5. It uses discord-api to communicate with the drop-down and select orders that dont require butter.
-6. It finally sends the recipes and crafts dishes.
+## Pls no skid
 
 ## Installation
 

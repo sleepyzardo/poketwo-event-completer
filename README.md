@@ -1,3 +1,5 @@
+
+https://github.com/sleepyzardo/poketwo-event-completer/assets/88527682/fcbae852-d9e0-453a-90ea-63e806683f62
 # Zardo's Event Completer 
 
 This is a python script to automate the process of completing Poketwo's New event quests! The code might be a bit shabby and buggy due to me speedcoding it! Open an issue and I'll see what I can do
@@ -45,6 +47,8 @@ This code might have bugs or unattended issues. They are primarily because I've 
 ![image](https://github.com/sleepyzardo/poketwo-event-completer/assets/88527682/2ce5827b-f4d6-4a35-ad27-b531e04eea62)
 
 
+
+
 ## ChangeLogs
 - Edited Regular Expression to correctly log name of the dish.
 - Updated the code to work with new drop-rates.
@@ -53,6 +57,7 @@ This code might have bugs or unattended issues. They are primarily because I've 
 
 # Future-Plans
 - ~~Add Multi-Token support.~~ Added.
+
 
 
 

@@ -1,5 +1,4 @@
 
-https://github.com/sleepyzardo/poketwo-event-completer/assets/88527682/fcbae852-d9e0-453a-90ea-63e806683f62
 # Zardo's Event Completer 
 
 This is a python script to automate the process of completing Poketwo's New event quests! The code might be a bit shabby and buggy due to me speedcoding it! Open an issue and I'll see what I can do

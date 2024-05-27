@@ -10,6 +10,7 @@ This is a python script to automate the process of completing Poketwo's New even
 - Excellent Error Handling
 - Sexy Logger
 - Multi-Token Support
+
 ## Pls no skid
 
 ## Installation
@@ -19,6 +20,8 @@ Please follow the following steps to run this app yourself!
 1. **Install Python:** Download Python from [Here](https://www.python.org/downloads/).
 2. **Install Libraries:** Download the following listed libraries using ```pip install <library_name>:```
    - discord.py-self
+   - requests
+   - coloredlogs
 3. **Configuration:**
    - Account Authorization Token in `TOKENS` dict in `main.py`.
    - ChannelId in `TOKENS` dict in `main.py`.
